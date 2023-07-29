@@ -45,7 +45,7 @@ Resources:
     Type: AWS::EC2::EIPAssociation
     Properties:
       EIP: !Ref EIP
-      InstanceId: !Ref InstanceId
+      InstanceId: !Ref Instance
   Record:
     Type: AWS::Route53::RecordSet
     Properties:
