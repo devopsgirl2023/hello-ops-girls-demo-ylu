@@ -20,8 +20,8 @@ Resources:
   Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: "ami-09964535fc01efa5f"
-      Instancetype: amzn2-ami-kernel-5.10-hvm-2.0.20230719.0-x86_64-gp2
+      ImageId: "ami-06b79cf2aee0d5c92"
+      Instancetype: t2.micro
       KeyName: devops-girls-2023
       SecurityGroups:
         - !Ref SecurityGroupName
