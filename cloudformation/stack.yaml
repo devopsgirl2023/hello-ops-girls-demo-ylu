@@ -20,7 +20,11 @@ Resources:
   Instance:
     Type: AWS::EC2::Instance
     Properties:
-      # TODO: Add properties according to the playbook
+      ImageId: "ami-09964535fc01efa5f"
+      Instancetype: amzn2-ami-kernel-5.10-hvm-2.0.20230719.0-x86_64-gp2
+      KeyName: devops-girls-2023
+      SecurityGroups:
+        - !Ref SecurityGroupName
       IamInstanceProfile: !Ref InstanceProfile
       UserData:
         Fn::Base64: |
