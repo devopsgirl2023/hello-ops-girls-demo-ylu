@@ -22,7 +22,7 @@ Resources:
     Properties:
       ImageId: "ami-06b79cf2aee0d5c92"
       Instancetype: t2.micro
-      KeyName: devops-girls-2023
+      KeyName: !Ref KeyName
       SecurityGroups:
         - !Ref SecurityGroupName
       IamInstanceProfile: !Ref InstanceProfile
