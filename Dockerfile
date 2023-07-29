@@ -5,7 +5,7 @@ COPY yarn.lock package.json /app/
 ## 安装依赖
 RUN yarn install
 ## 复制代码
-COPY .. /app/
+COPY . /app/
 ## 把typescript转换
 RUN npx tsc
 EXPOSE 8000
